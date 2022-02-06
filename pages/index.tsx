@@ -2,6 +2,7 @@ import React from "react";
 import RullerSvg from "../components/svg/ruller";
 import GenderSvg from "../components/svg/gender";
 import Baby from "../components/baby/Baby";
+import Characteristic from "../components/characteristic/Characteristic";
 
 export default function Home() {
     return (
@@ -13,15 +14,10 @@ export default function Home() {
 
             <section className='flex flex-row justify-center h-full w-full'>
                 <div className='w-1/3 h-full'>
-                    <div className='relative w-20 h-20'>
-                        <RullerSvg fill='#ec4899'/>
-                    </div>
-
-                    <div className='relative w-20 h-20 mt-10'>
-                        <GenderSvg fill='#ec4899'/>
-                    </div>
+                    <Characteristic svg={<RullerSvg width={'100px'} height={'100px'} fill='#ec4899'/>} text={'51cm'}/>
+                    <Characteristic svg={<GenderSvg fill='#ec4899'/>} text={'Féminin'}/>
                 </div>
-                <div className='w-1/2 h-full'>
+                <div className='w-1/3 h-full'>
                     <Baby/>
                 </div>
             </section>

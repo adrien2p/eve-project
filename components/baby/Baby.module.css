@@ -4,7 +4,7 @@
 @value --baby-blondeHair: #f5a11c;
 
 .full-baby-container {
-  position: absolute;
+  position: relative;
   height: auto;
   min-height: 100%;
   width: 100%;
@@ -14,10 +14,9 @@
 
 .baby-container {
   position: relative;
-  height: 530px;
+  height: 400px;
   width: 220px;
-  margin: auto;
-  top: 10vh;
+  margin-left: 5rem;
   -moz-transform: rotate(-39deg);
   -ms-transform: rotate(-39deg);
   -webkit-transform: rotate(-39deg);
@@ -27,7 +26,7 @@
 .towel {
   position: relative;
   top: 5%;
-  height: 90%;
+  height: 100%;
   width: 90%;
   background-color: --baby-white;
   margin: auto;
@@ -212,20 +211,6 @@
   -moz-border-radius-topright: 0px;
   -webkit-border-top-right-radius: 0px;
   border-top-right-radius: 0px;
-}
-
-.hair-containerd {
-  position: absolute;
-  top: 9.5%;
-  left: 29%;
-  height: 20px;
-  width: 95px;
-  -moz-border-radius-topleft: 90px;
-  -webkit-border-top-left-radius: 90px;
-  border-top-left-radius: 90px;
-  -moz-border-radius-topright: 90px;
-  -webkit-border-top-right-radius: 90px;
-  border-top-right-radius: 90px;
 }
 
 .panel-container {
@@ -741,7 +726,7 @@
   -ms-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  top: -430px;
+  top: -375px;
   -moz-animation: hair-anim;
   -moz-animation-duration: 1s;
   -moz-animation-iteration-count: infinite;
@@ -777,7 +762,7 @@
     transform: rotateY(0deg);
   }
   50% {
-    left: 23px;
+    left: 30px;
     -moz-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
@@ -887,17 +872,17 @@
   height: 100px;
   width: 150px;
   margin: auto;
-  left: 310px;
+  left: 200px;
   top: 140px;
   float: right;
   -moz-transform: rotate(22deg);
   -ms-transform: rotate(22deg);
   -webkit-transform: rotate(22deg);
   transform: rotate(22deg);
-  -moz-transform-origin: 100% 36% 50%;
-  -ms-transform-origin: 100% 36% 50%;
-  -webkit-transform-origin: 100% 36% 50%;
-  transform-origin: 100% 36% 50%;
+  -moz-transform-origin: 90% 36% 30%;
+  -ms-transform-origin: 90% 36% 30%;
+  -webkit-transform-origin: 90% 36% 30%;
+  transform-origin: 90% 36% 30%;
   -moz-animation: bottle-anim;
   -moz-animation-duration: 4s;
   -moz-animation-iteration-count: infinite;
@@ -921,7 +906,7 @@
 @keyframes bottle-anim {
   50% {
     left: 305px;
-    top: 165px;
+    top: 200px;
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
